@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>My First Interactive Webpage</title>
+    
+    <!-- This is our minimal CSS -->
+    
+</head>
+<body>
+
+    <div class="container">
+        <h1>My First Interactive Webpage</h1>
+
+        <!-- 1. GREETING (Conditional Statements) -->
+        <section>
+            <h2>Welcome!</h2>
+            <!-- The JavaScript will find this ID and put text inside it -->
+            <h3 id="greeting-message">Loading your greeting...</h3>
+        </section>
+
+        <!-- 2. LIST OF THINGS (Arrays & Loops) -->
+        <section>
+            <h2>My Skills</h2>
+            <p>Things I want to learn for my portfolio:</p>
+            <button id="list-button">Show My Skills</button>
+            <!-- The JavaScript will create and add <li> elements here -->
+            <ul id="my-list">
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+            </ul>
+        </section>
+
+        <!-- 3. CALCULATOR (Functions) -->
+        <section>
+            <h2>Simple Calculator</h2>
+            <p>A great example of reusable functions.</p>
+            <input type="number" id="num1" placeholder="Enter first number" value="10">
+            <input type="number" id="num2" placeholder="Enter second number" value="5">
+            
+            <div id="calc-buttons">
+                <button id="calc-add">+</button>
+                <button id="calc-subtract">-</button>
+                <button id="calc-multiply">*</button>
+                <button id="calc-divide">/</button>
+            
+            
+            <p style="margin-top: 20px;">
+                Result: <span id="calc-result">...</span>
+            </p>
+        </section>
+
+        <!-- 4. FORM (Objects) -->
+        <section>
+            <h2>Contact Me</h2>
+            <p>This form will take user input and store it in an Object.</p>
+            
+            <!-- We give the form an ID to find it with JS -->
+            <form id="contact-form">
+                <div>
+                    <label for="user-name">Name:</label>
+                    <input type="text" id="user-name" required>
+                </div>
+                <div>
+                    <label for="user-email">Email:</label>
+                    <input type="email" id="user-email" required>
+                </div>
+                <div>
+                    <label for="user-message">Message:</label>
+                    <textarea id="user-message" rows="4"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            
+            <h3>Form Data (as a JS Object):</h3>
+            <!-- We'll show the object data here -->
+            <pre id="form-output">Submit the form to see the data object.</pre>
+        </section>
+
+    </div> <!-- End of .container -->
+
+</body>
+</html>
