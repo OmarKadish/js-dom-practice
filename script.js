@@ -43,6 +43,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    // a hover event using Javascript
+    listbtn.addEventListener("mouseover", function(){
+        listbtn.innerHTML = "My skills are shown";
+    });
+        listbtn.addEventListener("mouseout", function(){
+        listbtn.innerHTML = "Show My Skills";
+    });
+
     // --- CALCULATOR ---
 
     //Getting the needed elements
